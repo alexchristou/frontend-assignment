@@ -1,17 +1,11 @@
-# Daily Vessel tracks (markers and animation)
+# FrontendAssignment
 
-Your task is to present daily vessel tracks on a map and animate them.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6
+and openLayers 6. 
 
-Consume dataset from our [API url](https://services.marinetraffic.com/api/exportvesseltrack/v:2/cf8f05df0b57bfae43e762cc61fd381239c4c042/) adding any necessary extra parameters like MMSI and days.
+## Development server
+Run `npm install` to install all dependencies.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Documentation on the API can be found [here](https://www.marinetraffic.com/en/ais-api-services/documentation/api-service:ps01).
-
-**We expect:**
-* Waypoints with informational tooltips.
-* A form of waypoint clustering.
-* Animation controls.
-* Javascript code (Suggested libraries: React with Redux andd React Query)
-
-**Share your work:**
-* Stage your solution on a demo page or
-* Fork this repo and create a pull request that contains your implementation in a new branch named after you.
+## Further details
+App shows waypoints for the last 180 days of a random vessel. Waypoints are clustered. On click, a popup with all available details will show if there is no cluster. A line is created by connecting all waypoints representing the vessels course. On 'Start animation' click, a marker appears and animates this course.

@@ -1,0 +1,9 @@
+<div id="map"></div>
+<div id="popup" class="ol-popup">
+  <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+  <div id="popup-content"></div>
+</div>
+<div style="margin:5px">
+  <button (click)="getData()" [disabled]="loading" class="btn btn-info">Get Data</button>
+  <button (click)="animate()" *ngIf="!loading && waypoints.length>2" class="btn" style="margin-left:5px" [class]="animating?'btn-danger':'btn-success'">{{animating?'Stop Animation':'Start Animation'}}</button>
+</div>
